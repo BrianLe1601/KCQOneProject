@@ -1,0 +1,158 @@
+/* Apply a custom font (Google Fonts or any font of your choice) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    background-image: url('../img/bgservice.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center top;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif; /* Set the font */
+    margin: 0;
+    padding: 0;
+}
+
+
+.service-description {
+    display: flex;
+    flex-direction: column;  /* Đặt các phần tử con (h1 và p) theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều dọc */
+    align-items: center;     /* Căn giữa theo chiều ngang */
+    color: white;
+    height: 100vh;            /* Chiều cao 100% để chiếm hết không gian cột */
+    padding: 30px;
+    text-align: center;
+}
+
+.service-description h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.service-description p {
+    font-size: 25px;
+    line-height: 1.5;
+    margin-top: 2rem;
+}
+.service-list {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.service-list ul {
+    list-style-type: none;
+    padding: 0;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.service-list ul li {
+    padding: 30px 0;
+}
+
+.service-list ul li:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Slight hover effect */
+}
+
+.custom-border{
+    position: relative;
+    width: 40%;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+.custom-border2{
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.custom-border::before,
+.custom-border::after {
+    content: "";
+    position: absolute;
+    background-color: #d4af37;
+}
+.custom-border2::before,
+.custom-border2::after {
+    content: "";
+    position: absolute;
+    background-color: #d4af37;
+}
+
+.custom-border::before {
+    top: 0;
+    left: 0;
+    width: 95px; /* Độ dài đoạn viền ngang */
+    height: 10px;
+}
+.custom-border2::before {
+    bottom: 0;
+    right: 0;
+    width: 95px; /* Độ dài đoạn viền ngang */
+    height: 10px;
+}
+
+.custom-border::after {
+    width: 10px; /* Độ dày viền dọc */
+    height: 95px; /* Chiều dài viền dọc trái */
+    top: 0;
+    left: 0;
+}
+.custom-border2::after {
+    width: 10px; /* Độ dày viền dọc */
+    height: 95px; /* Chiều dài viền dọc trái */
+    bottom: 0;
+    right: 0;
+}
+
+@media (max-width: 575.98px) {
+    .service-description{
+        height: auto;
+    }
+    .service-description h1 {
+        font-size: 2rem; /* Tiêu đề nhỏ hơn trên mobile */
+    }
+
+    .service-description p {
+        font-size: 1rem; /* Mô tả nhỏ hơn */
+    }
+
+    .service-list ul li {
+        padding: 10px 5px; /* Giảm padding trên mobile */
+    }
+
+    .service-list .icon {
+        font-size: 1.5rem; /* Giảm kích thước icon */
+    }
+
+    .service-list .text {
+        font-size: 0.9rem; /* Font-size nhỏ hơn */
+    }
+}
+
+/* Tablet (576px - 991px) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .service-description h1 {
+        font-size: 2.5rem; /* Tiêu đề vừa phải */
+    }
+
+    .service-description p {
+        font-size: 1.1rem; /* Mô tả lớn hơn mobile */
+    }
+
+    .service-list ul li {
+        padding: 12px 8px; /* Padding vừa phải */
+    }
+
+}
+
+/* Laptop (>=992px) */
+@media (min-width: 992px) {
+    .service-description h1 {
+        font-size: 3rem; /* Kích thước tiêu đề lớn hơn */
+    }
+
+    .service-list ul li {
+        padding: 15px 10px; /* Padding đủ rộng */
+    }
+}

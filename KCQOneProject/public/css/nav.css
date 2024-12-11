@@ -1,0 +1,56 @@
+.contact-btn {
+    background-color: #053f7f;
+}
+
+.nav-item .nav-link.active {
+    color: aqua !important;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: white;
+}
+.navbar-toggler{
+    background-color: #053f7f !important;
+    color: #053f7f !important;
+}
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+
+@media (max-width: 575.98px) {
+    .navbar-brand img {
+        width: 120px; /* Adjust logo size for smaller screens */
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Stack links vertically */
+        text-align: center;
+    }
+
+    .nav-link {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+        padding: 10px 0;
+    }
+
+    .contact-btn {
+        margin: 10px 0;
+        width: 100%; /* Make button span full width */
+        text-align: center;
+    }
+}
+
+/* Tablet (576px - 991px) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .navbar-brand img {
+        width: 140px; /* Slightly larger logo for tablets */
+    }
+
+    .nav-link {
+        font-size: 1.1rem;
+    }
+
+    .contact-btn {
+        margin: 0 5px;
+    }
+}

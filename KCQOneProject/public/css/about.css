@@ -1,0 +1,491 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.content{
+    background-color:#00ffff5d;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.section-1,
+.section-2,
+.section-3,
+.section-4,
+.section-5 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.section-1 {
+    background: url('../img/7.png') no-repeat;
+    background-size: 100% 100%; /* Chiều ngang 100%, chiều cao tự động */
+    background-position: center top; /* Canh giữa ở phía trên */
+    margin-bottom: 5px;
+}
+
+.section-1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.header {
+    width: 100%;
+    position: fixed;
+}
+header {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 10;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+}
+
+.image-circle {
+    width: 550px;
+    height: 480px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.681);
+    background: white;
+    margin-top: 10.8rem;
+    margin-left: 7.3rem;
+}
+
+.image-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text-content{
+    color: white;
+}
+.text-content h2{
+    font-size: 3rem;
+}
+.text-content p{
+    font-size: 1.3rem;
+}
+.text-top{
+    margin-bottom: 80px;
+}
+.text-under{
+    color: rgba(255, 255, 0, 0.484);
+}
+
+/* Default styles (desktop first) */
+
+/* Responsive for tablets (width <= 768px) */
+@media (max-width: 768px) {
+    .image-circle {
+        width: 300px;
+        height: 300px;
+        margin-top: 80px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .text-content {
+        text-align: center;
+    }
+
+    .text-content h2 {
+        font-size: 2rem;
+    }
+
+    .text-content p {
+        font-size: 1rem;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    .logo {
+        height: 80px;
+    }
+}
+
+/* Responsive for mobile (width <= 480px) */
+@media (max-width: 480px) {
+    .image-circle {
+        width: 200px;
+        height: 200px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .text-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .text-content p {
+        font-size: 0.9rem;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .logo {
+        height: 60px;
+    }
+
+    .text-under p {
+        margin-bottom: 5px;
+    }
+}
+
+/* section 2 */
+.section-2 {
+    background: url('../img/aboutS2.png') no-repeat;
+    background-size: 100% 100%; /* Chiều ngang 100%, chiều cao tự động */
+    background-position: center top; /* Canh giữa ở phía trên */
+    margin-bottom: 5px;
+}
+
+.section-2::after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.section-2 .container {
+    position: relative;
+    z-index: 2;
+}
+.section-2 .text-content{
+    margin-bottom: 180px;
+    margin-left: 50px;
+}
+.section-2 .section-title {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.section-content {
+    font-size: 18px;
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.nav-item a{
+    color:white;
+}
+
+.nav-item .nav-link.active {
+    color: aqua !important;
+    font-weight: bold;
+}
+
+/* section 3 */
+.section-3 {
+    height: 100vh;
+    background: url('../img/aboutS3.png') no-repeat;
+    background-size: 100% 100%;
+    background-position: center top;
+    padding:20px;
+    margin-bottom: 5px;
+}
+.section-3 .section-title {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+#growthChart{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    height: 400px;
+}
+
+@media (max-width: 1024px) {
+    .chart-container {
+        width: 90%;
+    }
+    #growthChart {
+        height: 300px;
+    }
+}
+@media (max-width: 768px) {
+    .chart-container {
+        width: 95%;
+    }
+    #growthChart {
+        height: 250px;
+    }
+}
+@media (max-width: 480px) {
+    .chart-container {
+        width: 100%;
+    }
+    #growthChart {
+        height: 200px;
+    }
+}
+
+.chart-container {
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* section-4 (directors) */
+.section-4 {
+    background: url('../img/aboutS4.png') no-repeat;
+    background-size: 100% 100%;
+    background-position: center top;
+    margin-bottom: 5px;
+}
+
+.section-4 .section-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.leader-circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #003366; /* Nền xanh đậm cho các tên và vị trí */
+    border-radius: 50%; /* Đây là vòng tròn nền */
+    width: 280px;
+    height: 280px;
+    justify-content: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.director-text{
+    margin-top: 9rem !important;
+}
+.director-circle {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.director-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.director-name {
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+
+.director-position {
+    font-size: 2rem;
+    color: white;
+}
+.director-degree {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.text-white{
+    color: white;
+}
+
+.director-card {
+    row-gap: 2rem; /* Khoảng cách giữa các hàng */
+    column-gap: 2rem; /* Khoảng cách giữa các cột */
+}
+
+.leader-text{
+    margin-top: 50px;
+}
+
+#color-name{
+    color: rgba(255, 217, 0, 0.633);
+}
+
+@media (min-width: 992px) {
+    .col-lg-2 {
+        flex: 0 0 auto;
+        width: 18% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .leader-circle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .director-circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .director-name {
+        font-size: 1.2rem;
+    }
+
+    .director-position {
+        font-size: 1rem;
+    }
+
+    /* Điều chỉnh số cột trên màn hình nhỏ */
+    .director-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .leader-circle {
+        width: 180px;
+        height: 180px;
+    }
+
+    .director-circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    .director-name {
+        font-size: 1.1rem;
+    }
+
+    .director-position {
+        font-size: 0.9rem;
+    }
+
+    .director-card {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+/* section 5 */
+.section-5 {
+    background: url('../img/aboutS5.png') no-repeat;
+    background-size: 100% 100%;
+    background-position: center top;
+}
+.section-5 .title{
+    font-weight: bold;
+    font-size: 2.5rem !important;
+}
+
+.border_cover {
+    width: 270px;
+    height: 270px;
+    background-color: orange;
+}
+
+.custom-card-1 {
+    border-radius: 10% !important;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 330px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 10px solid greenyellow !important; 
+    border-bottom: 10px solid greenyellow !important; 
+}
+
+.custom-card-2 {
+    border-radius: 10% !important;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 330px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 10px solid orange !important; 
+    border-bottom: 10px solid orange !important; 
+}
+
+.custom-card-3 {
+    border-radius: 10% !important;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 330px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 10px solid plum!important; 
+    border-bottom: 10px solid plum !important; 
+}
+
+.custom-card-4 {
+    border-radius: 10% !important;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 330px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 10px solid green !important; 
+    border-bottom: 10px solid green !important; 
+}
