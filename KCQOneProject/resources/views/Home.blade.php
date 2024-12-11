@@ -15,7 +15,7 @@
         <div class="row align-items-center flex-grow-1 w-100">
             <div class="col-md-5 text-center mb-4 mb-md-0 d-flex justify-content-center align-items-center">
                 <div class="image-circle">
-                    <img src="{{ asset('img/about3.png') }}" alt="Hình ảnh công ty">
+                    <img src="/img/about3.png" alt="Hình ảnh công ty">
                 </div>
             </div>
             <div class="text-content col-md-7 d-flex flex-column justify-content-center px-5">
@@ -103,19 +103,19 @@
         <div class="container-fluid">
             <div class="row gx-3 align-items-center justify-content-between slider">
                 <div class="col-1 d-flex align-items-center justify-content-center">
-                    <img src="{{ asset('img/list3.jpg') }}" alt="Hình 1" class="img-fluid img-small" data-index="0">
+                    <img src="img/list3.jpg" alt="Hình 1" class="img-fluid img-small" data-index="0">
                 </div>
                 <div class="col-3 d-flex align-items-center justify-content-center">
-                    <img src="{{ asset('img/list2.jpg') }}" alt="Hình 2" class="img-fluid img-medium" data-index="1">
+                    <img src="img/list2.jpg" alt="Hình 2" class="img-fluid img-medium" data-index="1">
                 </div>
                 <div class="col-4 d-flex align-items-center justify-content-center">
-                    <img src="{{ asset('img/list1.jpg') }}" alt="Hình 3" class="img-fluid img-large" data-index="2">
+                    <img src="img/list1.jpg" alt="Hình 3" class="img-fluid img-large" data-index="2">
                 </div>
                 <div class="col-3 d-flex align-items-center justify-content-center">
-                    <img src="{{ asset('img/list4.jpg') }}" alt="Hình 4" class="img-fluid img-medium" data-index="3">
+                    <img src="img/list4.jpg" alt="Hình 4" class="img-fluid img-medium" data-index="3">
                 </div>
                 <div class="col-1 d-flex align-items-center justify-content-center">
-                    <img src="{{ asset('img/list5.jpg') }}" alt="Hình 5" class="img-fluid img-small" data-index="4">
+                    <img src="img/list5.jpg" alt="Hình 5" class="img-fluid img-small" data-index="4">
                 </div>
             </div>
         </div>

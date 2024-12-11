@@ -7,7 +7,7 @@
     <div class="row align-items-center flex-grow-1 w-100">
         <div class="col-md-5 text-center mb-4 mb-md-0 d-flex justify-content-center align-items-center">
             <div class="image-circle">
-                <img src="{{ asset('img/about3.png') }}" alt="Hình ảnh công ty">
+                <img src="img/about3.png" alt="Hình ảnh công ty">
             </div>
         </div>
         <div class="text-content col-md-7 d-flex flex-column justify-content-center px-5">
@@ -53,7 +53,7 @@
             <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
                 <div class="leader-circle">
                     <div class="director-circle">
-                        <img src="{{ asset('img/male.png') }}" alt="Lê Hữu Vinh" class="img-fluid">
+                        <img src="img/male.png" alt="Lê Hữu Vinh" class="img-fluid">
                     </div>
                 </div>
                 <div class="leader-text pt-5">
@@ -64,7 +64,7 @@
             <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
                 <div class="leader-circle">
                     <div class="director-circle">
-                        <img src="{{ asset('img/male.png') }}" alt="Trần Hữu Quốc Vân" class="img-fluid">
+                        <img src="img/male.png" alt="Trần Hữu Quốc Vân" class="img-fluid">
                     </div>
                 </div>
                 <div class="leader-text">
@@ -76,7 +76,7 @@
             <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
                 <div class="leader-circle">
                     <div class="director-circle">
-                        <img src="{{ asset('img/male.png') }}" alt="Nguyễn Hải Đăng" class="img-fluid">
+                        <img src="img/male.png" alt="Nguyễn Hải Đăng" class="img-fluid">
                     </div>
                 </div>
                 <div class="leader-text pt-5">
@@ -87,7 +87,7 @@
             <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
                 <div class="leader-circle">
                     <div class="director-circle">
-                        <img src="{{ asset('img/male.png') }}" alt="Trần Tiến Sơn" class="img-fluid">
+                        <img src="img/male.png" alt="Trần Tiến Sơn" class="img-fluid">
                     </div>
                 </div>
                 <div class="leader-text pt-5">
@@ -98,7 +98,7 @@
             <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
                 <div class="leader-circle">
                     <div class="director-circle">
-                        <img src="{{ asset('img/female.png') }}" alt="Nguyễn Thị Kim Ngân" class="img-fluid">
+                        <img src="img/female.png" alt="Nguyễn Thị Kim Ngân" class="img-fluid">
                     </div>
                 </div>
                 <div class="leader-text pt-5">
@@ -121,7 +121,7 @@
             <!-- Card 1 -->
             <div class="col-3 d-flex flex-column text-white align-items-center justify-content-center">
                 <div class="card position-relative custom-card-1 mb-4">
-                    <img src="{{ asset('img/TTC1.png') }}" alt="Hình 1" class="img-fluid img-small">
+                    <img src="img/TTC1.png" alt="Hình 1" class="img-fluid img-small">
                 </div>
 
                 <p style="width: 70%">Ứng dụng di động <br>- Kiểm Kê Tài Sản Đầu Tư <br>- Phát triển giải pháp di động tiên tiến hỗ trợ quá trình kiểm kê tài sản cho TTC đầu tư</p>
@@ -129,7 +129,7 @@
             <!-- Card 2 -->
             <div class="col-3 d-flex flex-column text-white align-items-center justify-content-center">
                 <div class="card position-relative custom-card-2 mb-4">
-                    <img src="{{ asset('img/TTC2.png') }}" alt="Hình 2" class="img-fluid img-small">
+                    <img src="img/TTC2.png" alt="Hình 2" class="img-fluid img-small">
                 </div>
 
                 <p style="width: 70%">Ứng dụng di động <br>- Quản Lý Toà Nhà TTC Land <br>- Tạo ra một ứng dụng hiệu quả giúp quản lý tòa nhà một cách thông minh cho TTC Land</p>
@@ -137,7 +137,7 @@
             <!-- Card 3 -->
             <div class="col-3 d-flex flex-column text-white align-items-center justify-content-center">
                 <div class="card position-relative custom-card-3 mb-5">
-                    <img src="{{ asset('img/TTC3.png') }}" alt="Hình 3" class="img-fluid img-small">
+                    <img src="img/TTC3.png" alt="Hình 3" class="img-fluid img-small">
                 </div>
 
                 <p style="width: 70%">Ứng dụng Web PNL Module, Warehouse ITL Logistics: Phát triển module PNL và giải pháp quản lý kho hiệu quả cho ITL Logistics</p>
@@ -145,7 +145,7 @@
             <!-- Card 4 -->
             <div class="col-3 d-flex flex-column text-white align-items-center justify-content-center">
                 <div class="card position-relative custom-card-4 mb-5">
-                    <img src="{{ asset('img/TTC4.png') }}" alt="Hình 4" class="img-fluid img-small">
+                    <img src="img/TTC4.png" alt="Hình 4" class="img-fluid img-small">
                 </div>
 
                 <p style="width: 70%">Web Customer Portal Khu Công Nghiệp TTC IZ. Xây dựng cổng thông tin trực tuyến giúp tối ưu hóa quản lý khu công nghiệp TTC IZ </p>

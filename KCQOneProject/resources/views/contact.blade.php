@@ -23,7 +23,7 @@
 
         <div class="col-md-6">
             <div class="contact_img">
-                <img src="{{ asset('img/about3.png') }}" alt="Hình ảnh công ty">
+                <img src="img/about3.png" alt="Hình ảnh công ty">
             </div>
         </div>
     </div>

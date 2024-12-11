@@ -19,6 +19,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        if (env('DB_CONNECTION') !== null) {
+            // Chỉ chạy khi có DB
+            Schema::defaultStringLength(191); 
+        }
     }
 }
